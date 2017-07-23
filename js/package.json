@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/mccarthinator/liri-node-app"
+  },
   "author": "katie mac",
   "license": "ISC",
   "dependencies": {
