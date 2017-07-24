@@ -39,9 +39,9 @@ function movieNull() {
 
 
 /////////// logic for retrieving data from omdb API  /////////////// 
-var nothingURL = "http://www.omdbapi.com/?t=mr+nobody&y=&plot=short&apikey=40e9cece";
+var nobodyURL = "http://www.omdbapi.com/?t=mr+nobody&y=&plot=short&apikey=40e9cece";
 
-request(nothingURL, function(error, response, body) {
+request(nobodyURL, function(error, response, body) {
 
   if (!error && response.statusCode === 200) {
 
@@ -90,8 +90,8 @@ request(queryUrl, function(error, response, body) {
 
 //////// twitter function to display 20 most recent tweets //////////// 
 function twitter() { 
-	var params = {screen_name: 'mccarthinator', count: 20};
-	keysT.get('statuses/user_timeline', params, function(error, data, response) {
+	var properties = {screen_name: 'mccarthinator', count: 20};
+	keysT.get('statuses/user_timeline', properties, function(error, data, response) {
  	 if (!error) {
  	 	 for (var i = 0; i < data.length ; i++) {
    		 console.log(data[i].text);

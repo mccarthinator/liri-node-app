@@ -12,7 +12,6 @@ exports.twitterKeys = Twitter ({
 
 
 ////// spotify keys //////////
-
 var Spotify = require('node-spotify-api');
  
 exports.spotifyKeys = new Spotify({
@@ -20,7 +19,7 @@ exports.spotifyKeys = new Spotify({
   secret: '07e43665ab4f4239aaeffbb2e1a3d18f'
 });
 
-//slice
+
 exports.commands = { 
 	action:process.argv[2], 
 	value:process.argv[3]
